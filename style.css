@@ -13,25 +13,37 @@ h3,
 h4,
 h5 {
     text-transform: capitalize;
-
 }
 
+.adjuster,
+.adjusterPineapple,
+.adjusterApple,
+.adjusterStrawberry,
+.adjusterMelon,
+.adjusterWatermellon {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+
+
+/*******************NAVBAR*************************************/
 .logo {
     height: 90px;
     position: fixed;
     z-index: 2;
-    top: 1%;
+    top: 3%;
     left: 2%;
     background-color: #262418;
     border-radius: 50px;
 }
 
-nav ul {
+nav {
     position: fixed;
     z-index: 2;
     text-align: center;
-    top: 0;
+    top: 3%;
     right: 0;
+    background: rgba(0, 0, 0, 0.3);
 
 
 }
@@ -41,20 +53,26 @@ nav li {
     margin: 1em;
     font-size: 1.3em;
     color: #f0f0f0;
-    border: 1px solid #fff;
-    border-radius: 30px;
+    border-radius: 2px;
     padding: .5em;
     text-shadow: 1px 1px #494949;
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    background: #FBB679;
+
+
 }
 
 nav li:hover {
     transform: scale(1.1);
     transition: .3s linear;
+    border: 1px solid #fff;
+    background: #FBB679;
+
 
 }
 
+/********************************************************/
+
+
+/*******************LANDSCREEN*************************************/
 #landingPage h1 {
     top: 50%;
     left: 50%;
@@ -62,7 +80,6 @@ nav li:hover {
     font-size: 2.6em;
     transform: translate(-50%, -50%);
     color: #f0f0f0;
-    border: 1px solid #fff;
     padding: .5em;
     border-radius: 5px;
     text-shadow: 1px 1px #494949;
@@ -84,12 +101,15 @@ nav li:hover {
 }
 
 #landingPage img {
-    height: 50px;
+    height: 80px;
     position: absolute;
     bottom: 10%;
     right: 50%;
     animation: arrow 1s infinite;
     animation-direction: alternate;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    padding: 1em;
 }
 
 @keyframes arrow {
@@ -112,7 +132,9 @@ nav li:hover {
     background-position: center;
 }
 
+/********************************************************/
 
+/*******************INFO PAGE*************************************/
 #info {
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     height: 65vh;
@@ -129,7 +151,7 @@ nav li:hover {
 
 .adjusterInfo {
     position: absolute;
-    right: 35%;
+    right: 40%;
     top: 10%
 }
 
@@ -167,9 +189,9 @@ nav li:hover {
     font-size: 2em;
 }
 
+/********************************************************/
 
-
-
+/*****************Pineapple Section***************************************/
 #pineapple {
     background-image: url(images/pineapple.jpg);
     height: 100vh;
@@ -180,14 +202,6 @@ nav li:hover {
     position: relative;
 }
 
-.adjuster,
-.adjusterPineapple,
-.adjusterApple,
-.adjusterStrawberry,
-.adjusterMelon,
-.adjusterWatermellon {
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-}
 
 .adjuster {
     top: 50%;
@@ -195,7 +209,7 @@ nav li:hover {
     font-size: 2.6em;
     transform: translate(-50%, -50%);
     color: #f0f0f0;
-    border: 1px solid #fff;
+    /*    border: 1px solid #fff;*/
     padding: .5em;
     border-radius: 5px;
     text-shadow: 1px 1px #494949;
@@ -204,6 +218,9 @@ nav li:hover {
 
 }
 
+/********************************************************/
+
+/************************APPLE SECTION********************************/
 #apple {
     background-image: url(images/apple.jpg);
     height: 100vh;
@@ -222,7 +239,7 @@ nav li:hover {
     font-size: 2.6em;
     transform: translate(-50%, -50%);
     color: #f0f0f0;
-    border: 1px solid #fff;
+    /*    border: 1px solid #fff;*/
     padding: .5em;
     border-radius: 5px;
     text-shadow: 1px 1px #494949;
@@ -230,6 +247,9 @@ nav li:hover {
     background: #C61C14;
 }
 
+/********************************************************/
+
+/*********************StRAWBERRY SECTION***********************************/
 #strawberry {
     background-image: url(images/straberry.jpg);
     height: 100vh;
@@ -248,7 +268,7 @@ nav li:hover {
     font-size: 2.6em;
     transform: translate(-50%, -50%);
     color: #f0f0f0;
-    border: 1px solid #fff;
+    /*    border: 1px solid #fff;*/
     padding: .5em;
     border-radius: 5px;
     text-shadow: 1px 1px #494949;
@@ -256,6 +276,9 @@ nav li:hover {
     background: #CD5727;
 }
 
+/********************************************************/
+
+/************************MELON SECTION********************************/
 #melon {
     background-image: url(images/honeydew.jpg);
     height: 100vh;
@@ -274,7 +297,7 @@ nav li:hover {
     font-size: 2.6em;
     transform: translate(-50%, -50%);
     color: #f0f0f0;
-    border: 1px solid #fff;
+    /*    border: 1px solid #fff;*/
     padding: .5em;
     border-radius: 5px;
     text-shadow: 1px 1px #494949;
@@ -282,6 +305,10 @@ nav li:hover {
     background: #BAB35A;
 }
 
+/********************************************************/
+
+
+/********************WATERMELLON SECTION************************************/
 #watermellon {
     background-image: url(images/watermellon.jpg);
     height: 100vh;
@@ -299,7 +326,7 @@ nav li:hover {
     font-size: 2.6em;
     transform: translate(-50%, -50%);
     color: #f0f0f0;
-    border: 1px solid #fff;
+    /*    border: 1px solid #fff;*/
     padding: .5em;
     border-radius: 5px;
     text-shadow: 1px 1px #494949;
@@ -307,6 +334,10 @@ nav li:hover {
     background: #67AB76;
 }
 
+/********************************************************/
+
+
+/********************FOOTER************************************/
 footer {
     height: 30vh;
     text-align: center;
@@ -317,3 +348,5 @@ footer h2 {
     color: #fff;
     transform: translateY(5em);
 }
+
+/********************************************************/
